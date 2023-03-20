@@ -11,7 +11,7 @@ function reverseText(data) {
     // convert to string and join the reversed array after each spaces
     console.log(result.join(" "));
 }
-// call functio
+// call function
 reverseText(text);
 
 // factorize a number
@@ -41,7 +41,7 @@ function factorizeNum(data) {
 
 }
 // call function
-factorizeNum(num);
+// factorizeNum(num);
 
 
 // Title case a sentence
@@ -54,8 +54,8 @@ function titleCase(data) {
 
     for (let i = 0; i < textconvert.length; i++) {
 
-                                                                                                             
-        textconvert[i] = textconvert[i].charAt(0).toUpperCase() + textconvert[i].slice(1); 
+
+        textconvert[i] = textconvert[i].charAt(0).toUpperCase() + textconvert[i].slice(1);
 
         console.log(textconvert[i])
 
@@ -73,4 +73,44 @@ function titleCase(data) {
     }
 }
 
-titleCase(senText)
+// titleCase(senText)
+
+
+
+// longest word
+
+let wordList = "I will come to your house once am done"
+
+// variable that holds the longest word
+let longestWord = 0;
+
+function findLongestWord(data) {
+
+    // splittting the string to convert into array
+    let wordArray = data.split(" ")
+    // console.log(wordArray)
+
+    // looping through the converted array
+    for (let i = 0; i < wordArray.length; i++) {
+
+        // console.log(longestWord);
+
+        // using if statement to compare each word length
+
+        if (longestWord < wordArray[i].length) {
+            // this assign a value that is greater than 0[the set value of the longest word] at first
+            // longestWord take the new value assigned and go over the loop again...so on untill the value assigned is greater than the words in the array 
+            longestWord = wordArray[i].length;
+            console.log(longestWord)
+            console.log(wordArray[i])
+
+        }
+        // console.log(element);
+        // console.log(i);
+
+
+    }
+
+}
+
+findLongestWord(wordList);
