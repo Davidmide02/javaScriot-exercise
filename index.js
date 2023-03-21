@@ -113,3 +113,23 @@ function findLongestWord(data) {
 }
 
 findLongestWord(wordList);
+
+
+
+// ........5......
+// largest number in an array
+
+const numArr = [10,12,6,9,13];
+let largestNum = 0;
+
+numArr.forEach(element => {
+
+    if (element > largestNum) {
+
+        largestNum = element;
+        console.log(largestNum + " " + "I am the largest number");
+        return largestNum;
+        
+    }
+    
+});
