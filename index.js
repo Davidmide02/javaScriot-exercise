@@ -1,3 +1,4 @@
+// 1
 // reverse a string
 
 const text = "Hello Jolomi Snr Dev!";
@@ -14,6 +15,7 @@ function reverseText(data) {
 // call function
 reverseText(text);
 
+// .....2......
 // factorize a number
 // declear a number
 const num = 10;
@@ -41,42 +43,39 @@ function factorizeNum(data) {
 
 }
 // call function
-// factorizeNum(num);
+factorizeNum(num);
 
-
+// ....3.....
 // Title case a sentence
 
 const senText = "Hello how did you get here?"
 
 function titleCase(data) {
-    let textconvert = data.toLowerCase();
-    textconvert.split(" ");
 
-    for (let i = 0; i < textconvert.length; i++) {
+    // converting all the words in the strings to lower case
+    const textconvert = data.toLowerCase();
+    // converting into Array
+    const textSplit = textconvert.split(" ");
+    // looping thhrough each word
+    for (let i = 0; i < textSplit.length; i++) {
 
-
-        textconvert[i] = textconvert[i].charAt(0).toUpperCase() + textconvert[i].slice(1);
-
-        console.log(textconvert[i])
-
-        // const element = array[i];
-
-        // console.log(textconvert)
-
-
-
-
-        // data.split("")
-        // console.log(textconvert)
-
+        // getting first letter in each word
+        const firstletter = textSplit[i][0];
+        // converting first letters to uppercase
+        const firstletterUppercase = firstletter.toUpperCase();
+        // replacing the first letters with the converted ones
+        textSplit[i] = `${firstletterUppercase}${textSplit[i].slice(1)}`;
+        // converting back to string
+        const titleCase = textSplit.join(" ");
+        console.log(titleCase);
 
     }
 }
 
-// titleCase(senText)
+titleCase(senText)
 
 
-
+// ......4......
 // longest word
 
 let wordList = "I will come to your house once am done"
