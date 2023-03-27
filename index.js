@@ -133,3 +133,27 @@ numArr.forEach(element => {
     }
     
 });
+
+
+// random letter from a string
+const nameW = "Adenusi";
+const radomLetter = nameW.charAt(
+    Math.floor(Math.random()*nameW.length)
+)
+console.log(radomLetter);
+// console.log(nameW.charAt(2));
+// nameW.charAt(2)
+// function generateRandomLetter(string) {
+//     const array = string.split(" ");
+//     for (let index = 0; index < array.length; index++) {
+//         console.log(array);
+//         const element = array[index];
+//       const ranD =  Math.floor(Math.random()*array.length);
+//         console.log(array[ranD]);
+
+        
+//     }
+    
+// }
+
+// generateRandomLetter(nameW);
