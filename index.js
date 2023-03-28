@@ -8,7 +8,7 @@ function reverseText(data) {
     const dataR = data.split(" ");
     console.log(dataR);
     //  reverse the array
-    const result = dataR.reverse()
+    const result = dataR.reverse();
     // convert to string and join the reversed array after each spaces
     console.log(result.join(" "));
 }
@@ -119,7 +119,7 @@ findLongestWord(wordList);
 // ........5......
 // largest number in an array
 
-const numArr = [10,12,6,9,13];
+const numArr = [10, 12, 6, 9, 13];
 let largestNum = 0;
 
 numArr.forEach(element => {
@@ -129,17 +129,35 @@ numArr.forEach(element => {
         largestNum = element;
         console.log(largestNum + " " + "I am the largest number");
         return largestNum;
-        
+
     }
-    
+
 });
+
+// or....
+//  let lhm  = 0;
+// function lgNum(params) {
+
+//     for (let index = 0; index < params.length; index++) {
+//         // const element = array[index];
+//         if (lhm < params[index] ) {
+//            lhm = params[index];
+//            console.log("Im done with lg" + " " + largestNum);
+
+//         }
+
+//     }
+
+// }
+
+// lgNum(numArr);
 
 
 // random letter from a string
 const nameW = "Adenusi";
 const radomLetter = nameW.charAt(
-    Math.floor(Math.random()*nameW.length)
-)
+    Math.floor(Math.random() * nameW.length)
+);
 console.log(radomLetter);
 // console.log(nameW.charAt(2));
 // nameW.charAt(2)
@@ -151,9 +169,35 @@ console.log(radomLetter);
 //       const ranD =  Math.floor(Math.random()*array.length);
 //         console.log(array[ranD]);
 
-        
+
 //     }
-    
+
 // }
 
 // generateRandomLetter(nameW);
+
+// ...6....
+// checking last word or ending of word
+const newString = "I want to know the ending of this long sentence, added new words"
+
+function endofSentence(params) {
+
+    const worldA = params.split(" ");
+    for (let index = 0; index < worldA.length; index++) {
+        const element = worldA[index];
+        const result = worldA[worldA.length - 1];
+        console.log("I am the last word here" + " " + result);
+
+    }
+
+}
+
+endofSentence(newString);
+
+
+// repeat a string for a given time
+
+// uncomment the function to continue
+// function repeatString(string, num) {
+    
+// }
