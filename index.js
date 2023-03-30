@@ -183,6 +183,7 @@ const newString = "I want to know the ending of this long sentence, added new wo
 function endofSentence(params) {
 
     const worldA = params.split(" ");
+    
     for (let index = 0; index < worldA.length; index++) {
         const element = worldA[index];
         const result = worldA[worldA.length - 1];
@@ -198,6 +199,13 @@ endofSentence(newString);
 // repeat a string for a given time
 
 // uncomment the function to continue
-// function repeatString(string, num) {
-    
-// }
+function repeatString(string, num) {
+          for (let index = 0; index < num; index++) {
+            // const element = array[index];
+            console.log(string);
+            
+          }
+}
+const stringForm ="Hello 4 times"
+
+repeatString(stringForm, 4);
