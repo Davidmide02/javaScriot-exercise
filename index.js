@@ -203,9 +203,31 @@ function repeatString(string, num) {
           for (let index = 0; index < num; index++) {
             // const element = array[index];
             console.log(string);
+            string += string;
+            document.querySelector(".repeat").textContent =string;
             
           }
 }
-const stringForm ="Hello 4 times"
+let stringForm ="Hello 4 times"
 
-repeatString(stringForm, 4);
+repeatString(stringForm, 2);
+
+// truncate a string
+
+function truncateS(str, num) {
+    if (str.length <=  num ) {
+        
+        return str
+        
+        
+    }
+    else {
+
+        console.log(str);
+        const nB = `${str.slice(0,num)}...`;
+        console.log(nB);
+    }
+
+}
+
+truncateS("Hello Wa oke thkeeben", 7)
